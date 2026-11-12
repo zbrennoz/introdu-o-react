@@ -1,9 +1,9 @@
 import Bolo from '../../assets/img/produtos/le_grand_chocolat.png'
-import Icone from '../../assets/icones/user.svg'
+import icone from '../../assets/icones/user.svg'
 import Estrela from '../../assets/icones/star.svg'
-
 import './ListaProdutos.css'
 import { Link } from 'react-router-dom'
+import Card from '../../components/card/card'
 
 function ListaProdutos(){
   return(
@@ -17,7 +17,13 @@ function ListaProdutos(){
       <hr />
     </div>
     <div className="prod_cards">
-      <article className="prod_card">
+      <Card imgProduto={Bolo} 
+      nome={'Le Grand Chocolat'} 
+      descricao={'Mousse de chocolate belga 70%, praliné de avelãs e biscuit de cacau.'} 
+      valor={185.0} 
+      quantidadeAvaliacoes={10} 
+      nota={9.5}/>
+      {/* <article className="prod_card">
         <figure>
           <img
             src={Bolo}
@@ -25,7 +31,7 @@ function ListaProdutos(){
             />
         </figure>
         <h2>
-          <Link to="detalheProduto" >Le Grand Chocolat</Link>
+          <Link to="/detalheProduto" >Le Grand Chocolat</Link>
         </h2>
         <p className="card_desc">
           Mousse de chocolate belga 70%, praliné de avelãs e biscuit de cacau.
@@ -33,13 +39,13 @@ function ListaProdutos(){
         <p className="card_rodape">
           <data value={185.0}>R$ 185,00 / kg</data>
           <span className="card_av">
-            <img src={Icone} alt="icone de usuarios" />
+            <img src={icone} alt="icone de usuarios" />
             <data value={10}>10</data>
             <img src={Estrela} alt="icone de estrela" />
             <data value="9.5">9,5</data>
           </span>
         </p>
-      </article>
+      </article> */}
     </div>
   </section>
   </main>

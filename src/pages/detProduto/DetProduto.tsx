@@ -1,13 +1,13 @@
-
-
 import './DetProduto.css';
+import img from '../../assets/img/produtos/opera_eternelle.png'
+
 
 function DetProduto() {
     return (
         <main>
             <h1>informações do produto</h1>
             <section className="container container_det_prod">
-                <img className="img_prod_web" src="../img/produtos/opera_eternelle.png" alt="foto do produto"
+                <img className="img_prod_web" src={img}
                 />
                 <div className="box_det_prod">
                     <a className="link_voltar" href="../home/index.html">
