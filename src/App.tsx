@@ -18,7 +18,7 @@ export default function App(){
             <Route path="/" element={<Home/>} />
             <Route path="/produtos" element={<ListaProdutos/>} />
             <Route path="/login" element={<Login/>} />
-            <Route path="/detalheProduto" element={<DetProduto/>} />
+            <Route path="/detalheProduto/:id" element={<DetProduto/>} />
             <Route path="/admProdutos" element={<AdmProdutos/>} />
   
             <Route path="*" element={<img className="container-notfound" src="https://cdn.dribbble.com/userupload/25439422/file/original-af9c309401b13edcd50861b6196ac9ee.gif" alt="Imagem de não"/>} />
