@@ -15,7 +15,13 @@ type CardProps  = {
     nota: number;
 }
 
-function Card({id, imgProduto, nome, descricao, valor, quantidadeAvaliacoes, nota}: CardProps){
+function Card({imgProduto,
+  id,
+  nome,
+  descricao,
+  valor,
+  quantidadeAvaliacoes,
+  nota }: CardProps){
     return(
         <article className="prod_card">
         <figure>
@@ -25,7 +31,7 @@ function Card({id, imgProduto, nome, descricao, valor, quantidadeAvaliacoes, not
             />
         </figure>
         <h2>
-          <Link to={`/detalheProduto`} >{nome}</Link>
+          <Link to={`/detalheProduto/${id}`} >{nome}</Link>
         </h2>
         <p className="card_desc">
           {descricao}
